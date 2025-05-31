@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인 페이지</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- 헤더 -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">로고</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-blue-600">홈</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">소개</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">서비스</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 배너 -->
+  <section class="bg-blue-100 py-20 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-4">당신을 위한 최고의 웹 서비스</h2>
+      <p class="text-lg mb-6">지금 바로 시작해보세요. 간편하고 빠른 웹 솔루션 제공!</p>
+      <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">더 알아보기</a>
+    </div>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-6">우리는 이런 일을 합니다</h3>
+      <p class="text-gray-600 mb-4">웹사이트 제작, 브랜딩, 마케팅까지 원스톱으로!</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-bold mb-2">웹 개발</h4>
+          <p class="text-gray-600">사용자 맞춤형 반응형 웹사이트 제작</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-bold mb-2">디자인</h4>
+          <p class="text-gray-600">브랜드에 맞춘 고급 디자인 제공</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h4 class="text-xl font-bold mb-2">마케팅</h4>
+          <p class="text-gray-600">SEO부터 SNS까지 효과적인 전략 수립</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 회사명. 모든 권리 보유.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
