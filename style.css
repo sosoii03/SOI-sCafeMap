@@ -1,0 +1,134 @@
+/* style.css */
+
+/* 전체 페이지 기본 설정 */
+body {
+    background-color: #f5f2e9; /* 따스한 연베이지 색 */
+    font-family: 'Malgun Gothic', sans-serif; /* 맑은 고딕 글꼴 */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 모든 내용을 가운데 정렬 */
+}
+
+/* 메인 컨테이너 (내용을 감싸는 박스) */
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2.5em;
+    color: #6b4f4f; /* 진한 커피색 */
+}
+
+/* 링크 버튼 스타일 */
+.nav-link {
+    display: inline-block;
+    background-color: #a08476; /* 부드러운 갈색 */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #6b4f4f; /* 마우스 올렸을 때 진한 커피색 */
+}
+
+/* --- 지도 페이지 스타일 --- */
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* 지도의 최대 너비 */
+    height: 700px; /* 지도의 높이 */
+    background-image: url('https://i.imgur.com/gDC8vCh.png'); /* 단순화된 수도권 지도 이미지 예시 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #ddd;
+    margin: 20px auto;
+}
+
+/* 하트 아이콘 기본 스타일 */
+.heart {
+    position: absolute; /* 지도 위에 자유롭게 배치 */
+    font-size: 24px; /* 하트 크기 */
+    text-decoration: none;
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+}
+
+/* 카테고리별 하트 색상 */
+.heart-red { color: #e57373; } /* 디저트 맛집 */
+.heart-green { color: #81c784; } /* 분위기 좋은 */
+.heart-yellow { color: #ffd54f; } /* 컨셉에 진심 */
+.heart-blue { color: #64b5f6; } /* 카공에 제격 */
+
+.legend {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+
+/* --- 카테고리 페이지 스타일 --- */
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2x2 그리드 */
+    gap: 20px; /* 칸 사이의 간격 */
+    width: 100%;
+}
+
+.category-box {
+    background-color: #faf8f3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.category-box h2 {
+    color: #6b4f4f;
+    border-bottom: 2px solid #a08476;
+    padding-bottom: 10px;
+}
+
+.category-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-box li a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* --- 개별 카페 페이지 스타일 --- */
+.cafe-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cafe-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.address-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #a08476;
+}
