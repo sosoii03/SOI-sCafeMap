@@ -51,7 +51,7 @@ h1 {
     width: 100%;
     max-width: 600px; /* 지도의 최대 너비 */
     height: 700px; /* 지도의 높이 */
-    background-image: url('map_full.png'); /* 단순화된 수도권 지도 이미지 예시 */
+    background-image: url('map_image.png'); /* 단순화된 수도권 지도 이미지 예시 */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
